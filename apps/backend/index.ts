@@ -4,7 +4,7 @@ import { prismaClient } from "db/client";
 const app = express();
 
 app.use(express.json());
-
+ 
 app.get("/users", async (req, res) => {
   await prismaClient.user.findMany()
     .then(users => {
