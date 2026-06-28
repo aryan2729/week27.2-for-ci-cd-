@@ -24,3 +24,5 @@ jobs:
                 build-args: DATABASE_URL=${{ secrets.DATABASE_URL }}
                 push : true 
                 tags : aryancode27/todo-app-frontend:${{ github.sha }}  #sha means version of tag in dockerfile.frontend
+
+              
