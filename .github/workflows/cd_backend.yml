@@ -27,7 +27,7 @@ jobs:
               run: |
                 echo "${{ secrets.SSH_PRIVATE_KEY }}" &> ~/ssh_key
                 chmod 600 ~/ssh_key
-                ssh -o StrictHostKeyChecking=no -i ~/ssh_key ubuntu@13.126.229.197 -t "
+                ssh -o StrictHostKeyChecking=no -i ~/ssh_key ubuntu@65.2.128.2 -t "
                 sudo docker stop user_backend || true
                 sudo docker rm -f user_backend || true
                 sudo docker pull aryancode27/todo-app-backend:${{ github.sha }}
