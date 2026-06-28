@@ -32,4 +32,3 @@ jobs:
                 sudo docker rm -f user_backend || true
                 sudo docker pull aryancode27/todo-app-backend:${{ github.sha }}
                 sudo docker run --name user_backend -d -p 8080:8080 aryancode27/todo-app-backend:${{ github.sha }}
-"
